@@ -21,11 +21,11 @@ Valid Login Test
     Input Username And Password
     Submit Login Form
     Input OTP
-    Click Element    //img[@alt='user']
+    Verify Login Success
+    Click Image      //img[@alt='user']
     Click Element    //div[@class='NavbarLink_dropdown__footer__FRFUM']
     Click Element    //button[normalize-space()='Yes']
     # Query Select Data OTP Login From DB mtix_application
-    # Verify Login Success
     Close Browser
 
 # Invalid Login Test
@@ -42,20 +42,20 @@ Input Username And Password
     Input Text    //input[contains(@id, 'input')]    ${USERNAME}
     Input Text    //input[@id='password']    ${PASSWORD}
 
-Input OTP
-    Wait Until Element Is Visible    //div[@class='FormOtp_form__U62ob']
-    Input Text    //input[1]    ${OTP}
-    Input Text    //input[2]    ${OTP}
-    Input Text    //input[3]    ${OTP}
-    Input Text    //input[4]    ${OTP}
-    Input Text    //input[5]    ${OTP}
-    Input Text    //input[6]    ${OTP}
-
 # Input OTP
 #     Wait Until Element Is Visible    //div[@class='FormOtp_form__U62ob']
-#     FOR    ${index}    IN RANGE    1    7
-#     Input Text    //input[${index}]    ${OTP}
-#     END 
+#     Input Text    //input[1]    ${OTP}
+#     Input Text    //input[2]    ${OTP}
+#     Input Text    //input[3]    ${OTP}
+#     Input Text    //input[4]    ${OTP}
+#     Input Text    //input[5]    ${OTP}
+#     Input Text    //input[6]    ${OTP}
+
+Input OTP
+    Wait Until Element Is Visible    //div[@class='FormOtp_form__U62ob']
+    FOR    ${index}    IN RANGE    0    6
+        Input Text    //input[${index+1}]    ${OTP[${index}]}
+    END 
 
 Submit Login Form
     Wait Until Element Is Visible    //button[text()='Login']
