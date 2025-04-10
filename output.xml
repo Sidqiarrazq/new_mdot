@@ -1,60 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-04-10T14:50:02.923407" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-04-10T14:55:56.296496" rpa="false" schemaversion="5">
 <suite id="s1" name="Sample Test" source="c:\Users\Sidqi\Testing\tests\sample_test.robot">
 <test id="s1-t1" name="Valid Login Test" line="17">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-04-10T14:50:03.677708" level="INFO">Opening browser 'chrome' to base url 'https://m-new.cinema21.co.id/id'.</msg>
+<msg time="2025-04-10T14:55:56.822315" level="INFO">Opening browser 'chrome' to base url 'https://m-new.cinema21.co.id/id'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-04-10T14:50:03.676723" elapsed="4.708596"/>
+<status status="PASS" start="2025-04-10T14:55:56.821172" elapsed="4.796189"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-04-10T14:50:08.388975" elapsed="0.992619"/>
+<status status="PASS" start="2025-04-10T14:56:01.619986" elapsed="1.197703"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-04-10T14:50:09.387123" level="INFO">Clicking element '//a[text()='Login']'.</msg>
-<msg time="2025-04-10T14:50:12.938405" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-04-10T14:50:12.940354" level="FAIL">Element with locator '//a[text()='Login']' not found.</msg>
+<msg time="2025-04-10T14:56:02.821584" level="INFO">Clicking element '//a[text()='Login']'.</msg>
 <arg>//a[text()='Login']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2025-04-10T14:50:09.384170" elapsed="3.589499">Element with locator '//a[text()='Login']' not found.</status>
+<status status="PASS" start="2025-04-10T14:56:02.819177" elapsed="1.642627"/>
 </kw>
 <kw name="Input Username And Password">
-<status status="NOT RUN" start="2025-04-10T14:50:12.976332" elapsed="0.000619"/>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//input[contains(@id, 'input')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-10T14:56:04.468415" elapsed="2.308643"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//input[@id='password']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-10T14:56:06.777780" elapsed="0.078794"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-10T14:56:06.858747" level="INFO">Typing text '0821212121' into text field '//input[contains(@id, 'input')]'.</msg>
+<arg>//input[contains(@id, 'input')]</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-10T14:56:06.857882" elapsed="0.337895"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-10T14:56:07.199358" level="INFO">Typing text '212121' into text field '//input[@id='password']'.</msg>
+<arg>//input[@id='password']</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-10T14:56:07.197351" elapsed="0.397963"/>
+</kw>
+<status status="PASS" start="2025-04-10T14:56:04.464424" elapsed="3.131540"/>
 </kw>
 <kw name="Submit Login Form">
-<status status="NOT RUN" start="2025-04-10T14:50:12.978536" elapsed="0.000430"/>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//button[text()='Login']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-10T14:56:07.600120" elapsed="0.092056"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-10T14:56:07.693839" level="INFO">Clicking element '//button[text()='Login']'.</msg>
+<arg>//button[text()='Login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-10T14:56:07.692940" elapsed="0.166595"/>
+</kw>
+<status status="PASS" start="2025-04-10T14:56:07.598123" elapsed="0.262097"/>
 </kw>
 <kw name="Input OTP">
-<status status="NOT RUN" start="2025-04-10T14:50:12.980330" elapsed="0.000328"/>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-04-10T14:56:13.297259" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-04-10T14:56:13.298347" level="FAIL">Element '//div[@class='FormOtp_form__U62ob']' not visible after 5 seconds.</msg>
+<arg>//div[@class='FormOtp_form__U62ob']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-04-10T14:56:07.864246" elapsed="5.445256">Element '//div[@class='FormOtp_form__U62ob']' not visible after 5 seconds.</status>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//input[${index+1}]</arg>
+<arg>${OTP[${index}]}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-10T14:56:13.311043" elapsed="0.000446"/>
+</kw>
+<var name="${index}"/>
+<status status="NOT RUN" start="2025-04-10T14:56:13.310543" elapsed="0.001705"/>
+</iter>
+<var>${index}</var>
+<value>0</value>
+<value>6</value>
+<status status="NOT RUN" start="2025-04-10T14:56:13.310048" elapsed="0.002871"/>
+</for>
+<status status="FAIL" start="2025-04-10T14:56:07.862175" elapsed="5.451788">Element '//div[@class='FormOtp_form__U62ob']' not visible after 5 seconds.</status>
 </kw>
 <kw name="Verify Login Success">
-<status status="NOT RUN" start="2025-04-10T14:50:12.981910" elapsed="0.000380"/>
+<status status="NOT RUN" start="2025-04-10T14:56:13.315637" elapsed="0.000525"/>
 </kw>
 <kw name="Click Image" owner="SeleniumLibrary">
 <arg>//img[@alt='user']</arg>
 <doc>Clicks an image identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-04-10T14:50:12.985498" elapsed="0.001867"/>
+<status status="NOT RUN" start="2025-04-10T14:56:13.317511" elapsed="0.000563"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>//div[@class='NavbarLink_dropdown__footer__FRFUM']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-04-10T14:50:12.989162" elapsed="0.000561"/>
+<status status="NOT RUN" start="2025-04-10T14:56:13.320027" elapsed="0.000548"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>//button[normalize-space()='Yes']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-04-10T14:50:12.991531" elapsed="0.000877"/>
+<status status="NOT RUN" start="2025-04-10T14:56:13.322587" elapsed="0.000496"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2025-04-10T14:50:12.994542" elapsed="0.000546"/>
+<status status="NOT RUN" start="2025-04-10T14:56:13.324376" elapsed="0.000340"/>
 </kw>
-<status status="FAIL" start="2025-04-10T14:50:03.674173" elapsed="9.322536">Element with locator '//a[text()='Login']' not found.</status>
+<status status="FAIL" start="2025-04-10T14:55:56.818602" elapsed="16.507289">Element '//div[@class='FormOtp_form__U62ob']' not visible after 5 seconds.</status>
 </test>
-<status status="FAIL" start="2025-04-10T14:50:02.940467" elapsed="10.060689"/>
+<status status="FAIL" start="2025-04-10T14:55:56.307810" elapsed="17.022503"/>
 </suite>
 <statistics>
 <total>
