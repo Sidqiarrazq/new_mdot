@@ -48,15 +48,6 @@ Input OTP
         Input Text    //input[${index + 1}]    ${OTP[${index}]}
     END 
 
-# Input OTP
-#     Wait Until Element Is Visible    //div[@class='FormOtp_form__U62ob']
-#     Input Text    //input[1]    ${OTP}
-#     Input Text    //input[2]    ${OTP}
-#     Input Text    //input[3]    ${OTP}
-#     Input Text    //input[4]    ${OTP}
-#     Input Text    //input[5]    ${OTP}
-#     Input Text    //input[6]    ${OTP}
-
 Submit Login Form
     Wait Until Element Is Visible    //button[text()='Login']
     Click Element    //button[text()='Login']
