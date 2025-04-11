@@ -1,9 +1,12 @@
 *** Settings ***
 Library    SeleniumLibrary
 
+Test Setup       Open Browser    ${URL}    ${BROWSER}
+Test Teardown    Close Browser
+
 *** Variables ***
 ${URL}         https://m-new.cinema21.co.id/id
-${BROWSER}     chrome
+${BROWSER}     firefox
 ${USERNAME}    0821212121
 ${PASSWORD}    212121
 ${OTP}         111111
@@ -11,7 +14,6 @@ ${OTP}         111111
 
 *** Test Cases ***
 Valid Login Test
-    Open Browser    ${URL}    ${BROWSER}
     Maximize Browser Window
     Submit Login Homepage
     Input Username And Password
@@ -21,7 +23,12 @@ Valid Login Test
     Submit User Button
     Submit Logout Button
     Submit Yes Button
-    Close Browser
+
+Veriry registrasi
+    Maximize Browser Window
+    Submit Login Homepage
+    
+    
 
 *** Keywords ***
 Submit Login Homepage
@@ -36,7 +43,8 @@ Input Username And Password
 
 Input OTP
     Wait Until Element Is Visible    //div[@class='FormOtp_form__U62ob']
-    FOR    ${index}    IN RANGE    0    5
+    ${length}=    Get Length    ${OTP}
+    FOR    ${index}    IN RANGE    0    ${length}
         Input Text    //input[${index + 1}]    ${OTP[${index}]}
     END 
 

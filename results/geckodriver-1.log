@@ -1,0 +1,86 @@
+1744345344395	geckodriver	INFO	Listening on 127.0.0.1:56937
+1744345344912	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" "/Applications/Firefox. ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/yd/0ps080vx45d_35xgmtw2g0f80000gn/T/rust_mozprofileSuoCRR"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1744345345868	Marionette	INFO	Marionette enabled
+1744345346424	Marionette	INFO	Listening on port 56944
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+WebDriver BiDi listening on ws://127.0.0.1:56938
+1744345347088	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:56938/devtools/browser/6d8f190c-3cc0-4fa2-9117-99d0dc997050
+JavaScript warning: https://m-new.cinema21.co.id/_next/static/chunks/8465-96d68bbc5d9d6ec1.js, line 19: WebGL context was lost.
+JavaScript warning: https://m-new.cinema21.co.id/_next/static/chunks/8465-96d68bbc5d9d6ec1.js, line 19: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://m-new.cinema21.co.id/_next/static/chunks/8465-96d68bbc5d9d6ec1.js, line 19: WebGL context was lost.
+JavaScript warning: https://m-new.cinema21.co.id/_next/static/chunks/8465-96d68bbc5d9d6ec1.js, line 19: WebGL context was lost.
+JavaScript warning: https://m-new.cinema21.co.id/_next/static/chunks/8465-96d68bbc5d9d6ec1.js, line 19: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://m-new.cinema21.co.id/_next/static/chunks/8465-96d68bbc5d9d6ec1.js, line 19: WebGL context was lost.
+JavaScript warning: https://m-new.cinema21.co.id/_next/static/chunks/8465-96d68bbc5d9d6ec1.js, line 19: WebGL context was lost.
+JavaScript warning: https://m-new.cinema21.co.id/_next/static/chunks/8465-96d68bbc5d9d6ec1.js, line 19: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://m-new.cinema21.co.id/_next/static/chunks/8465-96d68bbc5d9d6ec1.js, line 19: WebGL context was lost.
+JavaScript warning: https://m-new.cinema21.co.id/_next/static/chunks/8465-96d68bbc5d9d6ec1.js, line 19: WebGL context was lost.
+JavaScript warning: https://m-new.cinema21.co.id/_next/static/chunks/8465-96d68bbc5d9d6ec1.js, line 19: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://m-new.cinema21.co.id/_next/static/chunks/8465-96d68bbc5d9d6ec1.js, line 19: WebGL context was lost.
+JavaScript warning: https://m-new.cinema21.co.id/_next/static/chunks/8465-96d68bbc5d9d6ec1.js, line 19: WebGL context was lost.
+JavaScript warning: https://m-new.cinema21.co.id/_next/static/chunks/8465-96d68bbc5d9d6ec1.js, line 19: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://m-new.cinema21.co.id/_next/static/chunks/8465-96d68bbc5d9d6ec1.js, line 19: WebGL context was lost.
+JavaScript warning: https://m-new.cinema21.co.id/_next/static/chunks/8465-96d68bbc5d9d6ec1.js, line 19: WebGL context was lost.
+JavaScript warning: https://m-new.cinema21.co.id/_next/static/chunks/8465-96d68bbc5d9d6ec1.js, line 19: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://m-new.cinema21.co.id/_next/static/chunks/8465-96d68bbc5d9d6ec1.js, line 19: WebGL context was lost.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://m-new.cinema21.co.id."
+2025-04-11 11:22:56.037 firefox[12390:1909092] +[IMKClient subclass]: chose IMKClient_Modern
+2025-04-11 11:22:56.037 firefox[12390:1909092] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+console.error: services.settings: 
+  main/top-sites Signature failed  TypeError: NetworkError: Network request failed
+console.error: services.settings: 
+  Message: NetworkError: Network error: TypeError: NetworkError: Network request failed
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:1
+NetworkError@resource://services-settings/RemoteSettingsClient.sys.mjs:115:5
+_adjustedError@resource://services-settings/RemoteSettingsClient.sys.mjs:911:14
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:816:38
+
+console.error: services.settings: 
+  main/devtools-compatibility-browsers Signature failed  TypeError: NetworkError: Network request failed
+console.error: services.settings: 
+  Message: NetworkError: Network error: TypeError: NetworkError: Network request failed
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:1
+NetworkError@resource://services-settings/RemoteSettingsClient.sys.mjs:115:5
+_adjustedError@resource://services-settings/RemoteSettingsClient.sys.mjs:911:14
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:816:38
+
+console.error: services.settings: 
+  main/password-rules Signature failed  TypeError: NetworkError: Network request failed
+console.error: services.settings: 
+  Message: NetworkError: Network error: TypeError: NetworkError: Network request failed
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:1
+NetworkError@resource://services-settings/RemoteSettingsClient.sys.mjs:115:5
+_adjustedError@resource://services-settings/RemoteSettingsClient.sys.mjs:911:14
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:816:38
+
+[Child 12396, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+1744345415024	Marionette	INFO	Stopped listening on port 56944
+[Child 12396, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 12396, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 12396, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 12396, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 12396, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 12396, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 12396, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+console.error: services.settings: 
+  main/search-telemetry-v2 Signature failed  TypeError: NetworkError: Network request failed
+console.error: services.settings: 
+  Message: NetworkError: Network error: TypeError: NetworkError: Network request failed
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:1
+NetworkError@resource://services-settings/RemoteSettingsClient.sys.mjs:115:5
+_adjustedError@resource://services-settings/RemoteSettingsClient.sys.mjs:911:14
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:816:38
+
+console.warn: services.settings: main/url-classifier-skip-urls sync interrupted by shutdown
+console.warn: services.settings: main/websites-with-shared-credential-backends sync interrupted by shutdown
+console.warn: services.settings: main/normandy-recipes-capabilities sync interrupted by shutdown
+console.error: (new AbortError("IndexedDB: main/ms-language-packs getLastModified() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/IDBHelpers.jsm", 18))
