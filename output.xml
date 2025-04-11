@@ -1,80 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-04-11T11:04:17.923425" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-04-11T15:30:36.579032" rpa="false" schemaversion="5">
 <suite id="s1" name="Sample Test" source="c:\Users\Sidqi\Testing\tests\sample_test.robot">
-<test id="s1-t1" name="Valid Login Test" line="13">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-04-11T11:04:18.544867" level="INFO">Opening browser 'chrome' to base url 'https://m-new.cinema21.co.id/id'.</msg>
+<test id="s1-t1" name="Valid Login Test" line="15">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2025-04-11T15:30:37.205077" level="INFO">Opening browser 'chrome' to base url 'https://m-new.cinema21.co.id/id'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-04-11T11:04:18.544067" elapsed="7.674611"/>
+<status status="PASS" start="2025-04-11T15:30:37.204390" elapsed="4.985950"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-04-11T11:04:26.223063" elapsed="0.588137"/>
+<status status="PASS" start="2025-04-11T15:30:42.193759" elapsed="0.163351"/>
 </kw>
 <kw name="Submit Login Homepage">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>//a[text()='Login']</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-04-11T11:04:26.813773" elapsed="0.298661"/>
+<status status="PASS" start="2025-04-11T15:30:42.360866" elapsed="3.066048"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-04-11T11:04:27.113677" level="INFO">Clicking element '//a[text()='Login']'.</msg>
+<msg time="2025-04-11T15:30:45.428143" level="INFO">Clicking element '//a[text()='Login']'.</msg>
 <arg>//a[text()='Login']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-11T11:04:27.112933" elapsed="0.277892"/>
+<status status="PASS" start="2025-04-11T15:30:45.427573" elapsed="0.364482"/>
 </kw>
-<status status="PASS" start="2025-04-11T11:04:26.812546" elapsed="0.578598"/>
+<status status="PASS" start="2025-04-11T15:30:42.359103" elapsed="3.433452"/>
 </kw>
 <kw name="Input Username And Password">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>//input[contains(@id, 'input')]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-04-11T11:04:27.392885" elapsed="2.167579"/>
+<status status="PASS" start="2025-04-11T15:30:45.795217" elapsed="2.047452"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>//input[@id='password']</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-04-11T11:04:29.561542" elapsed="0.131090"/>
+<status status="PASS" start="2025-04-11T15:30:47.843958" elapsed="0.106579"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-04-11T11:04:29.695180" level="INFO">Typing text '0821212121' into text field '//input[contains(@id, 'input')]'.</msg>
+<msg time="2025-04-11T15:30:47.954226" level="INFO">Typing text '0821212121' into text field '//input[contains(@id, 'input')]'.</msg>
 <arg>//input[contains(@id, 'input')]</arg>
 <arg>${USERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-11T11:04:29.693822" elapsed="0.429215"/>
+<status status="PASS" start="2025-04-11T15:30:47.952547" elapsed="0.374898"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-04-11T11:04:30.125241" level="INFO">Typing text '212121' into text field '//input[@id='password']'.</msg>
+<msg time="2025-04-11T15:30:48.330036" level="INFO">Typing text '212121' into text field '//input[@id='password']'.</msg>
 <arg>//input[@id='password']</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-11T11:04:30.124066" elapsed="0.383455"/>
+<status status="PASS" start="2025-04-11T15:30:48.328478" elapsed="0.384293"/>
 </kw>
-<status status="PASS" start="2025-04-11T11:04:27.392094" elapsed="3.116447"/>
+<status status="PASS" start="2025-04-11T15:30:45.793982" elapsed="2.919580"/>
 </kw>
 <kw name="Submit Login Form">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>//button[text()='Login']</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-04-11T11:04:30.513099" elapsed="0.102809"/>
+<status status="PASS" start="2025-04-11T15:30:48.718330" elapsed="0.092985"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-04-11T11:04:30.619299" level="INFO">Clicking element '//button[text()='Login']'.</msg>
+<msg time="2025-04-11T15:30:48.813114" level="INFO">Clicking element '//button[text()='Login']'.</msg>
 <arg>//button[text()='Login']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-11T11:04:30.617376" elapsed="0.314639"/>
+<status status="PASS" start="2025-04-11T15:30:48.812236" elapsed="0.324702"/>
 </kw>
-<status status="PASS" start="2025-04-11T11:04:30.511015" elapsed="0.422247"/>
+<status status="PASS" start="2025-04-11T15:30:48.716155" elapsed="0.422100"/>
 </kw>
 <kw name="Input OTP">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2025-04-11T11:04:36.187086" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-04-11T11:04:36.187614" level="FAIL">Element '//div[@class='FormOtp_form__U62ob']' not visible after 5 seconds.</msg>
+<msg time="2025-04-11T15:30:54.491360" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-04-11T15:30:54.492087" level="FAIL">Element '//div[@class='FormOtp_form__U62ob']' not visible after 5 seconds.</msg>
 <arg>//div[@class='FormOtp_form__U62ob']</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2025-04-11T11:04:30.939851" elapsed="5.256416">Element '//div[@class='FormOtp_form__U62ob']' not visible after 5 seconds.</status>
+<status status="FAIL" start="2025-04-11T15:30:49.143893" elapsed="5.359019">Element '//div[@class='FormOtp_form__U62ob']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<var>${length}</var>
+<arg>${OTP}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="NOT RUN" start="2025-04-11T15:30:54.503880" elapsed="0.000389"/>
 </kw>
 <for flavor="IN RANGE">
 <iter>
@@ -82,37 +88,34 @@
 <arg>//input[${index + 1}]</arg>
 <arg>${OTP[${index}]}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-04-11T11:04:36.197927" elapsed="0.000347"/>
+<status status="NOT RUN" start="2025-04-11T15:30:54.506430" elapsed="0.000508"/>
 </kw>
 <var name="${index}"/>
-<status status="NOT RUN" start="2025-04-11T11:04:36.197450" elapsed="0.001102"/>
+<status status="NOT RUN" start="2025-04-11T15:30:54.505661" elapsed="0.001789"/>
 </iter>
 <var>${index}</var>
 <value>0</value>
-<value>5</value>
-<status status="NOT RUN" start="2025-04-11T11:04:36.196990" elapsed="0.001834"/>
+<value>${length}</value>
+<status status="NOT RUN" start="2025-04-11T15:30:54.504914" elapsed="0.003066"/>
 </for>
-<status status="FAIL" start="2025-04-11T11:04:30.937169" elapsed="5.262158">Element '//div[@class='FormOtp_form__U62ob']' not visible after 5 seconds.</status>
-</kw>
-<kw name="Verify Login Success">
-<status status="NOT RUN" start="2025-04-11T11:04:36.200968" elapsed="0.000558"/>
+<status status="FAIL" start="2025-04-11T15:30:49.141413" elapsed="5.367471">Element '//div[@class='FormOtp_form__U62ob']' not visible after 5 seconds.</status>
 </kw>
 <kw name="Submit User Button">
-<status status="NOT RUN" start="2025-04-11T11:04:36.202657" elapsed="0.000324"/>
+<status status="NOT RUN" start="2025-04-11T15:30:54.510469" elapsed="0.000597"/>
 </kw>
 <kw name="Submit Logout Button">
-<status status="NOT RUN" start="2025-04-11T11:04:36.204136" elapsed="0.000280"/>
+<status status="NOT RUN" start="2025-04-11T15:30:54.512284" elapsed="0.000336"/>
 </kw>
 <kw name="Submit Yes Button">
-<status status="NOT RUN" start="2025-04-11T11:04:36.205986" elapsed="0.000465"/>
+<status status="NOT RUN" start="2025-04-11T15:30:54.514107" elapsed="0.000510"/>
 </kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2025-04-11T11:04:36.207757" elapsed="0.000372"/>
+<status status="PASS" start="2025-04-11T15:30:54.516786" elapsed="2.648716"/>
 </kw>
-<status status="FAIL" start="2025-04-11T11:04:18.541914" elapsed="17.667564">Element '//div[@class='FormOtp_form__U62ob']' not visible after 5 seconds.</status>
+<status status="FAIL" start="2025-04-11T15:30:37.202585" elapsed="19.965249">Element '//div[@class='FormOtp_form__U62ob']' not visible after 5 seconds.</status>
 </test>
-<status status="FAIL" start="2025-04-11T11:04:17.940638" elapsed="18.273456"/>
+<status status="FAIL" start="2025-04-11T15:30:36.586669" elapsed="20.590248"/>
 </suite>
 <statistics>
 <total>

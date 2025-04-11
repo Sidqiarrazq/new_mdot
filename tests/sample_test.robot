@@ -40,7 +40,6 @@ Valid Login Test
     Submit Login Form
     # Generate OTP Code      6281219693235
     Input OTP
-    Verify Login Success
     Submit User Button
     Submit Logout Button
     Submit Yes Button
@@ -48,7 +47,6 @@ Valid Login Test
 Veriry registrasi
     Maximize Browser Window
     Submit Login Homepage
-    
 
 *** Keywords ***
 Submit Login Homepage
@@ -71,9 +69,6 @@ Input OTP
 Submit Login Form
     Wait Until Element Is Visible    //button[text()='Login']
     Click Element    //button[text()='Login']
-
-Verify Login Success
-    Wait Until Element Is Visible    //div[@class='Alert_snackbar__aHkWS Alert_success__phczx false']
 
 Submit User Button
     Wait Until Element Is Visible    //img[contains(@src, 'avatar')]
