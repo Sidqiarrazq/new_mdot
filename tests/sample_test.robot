@@ -24,7 +24,6 @@ Valid Login Test
     Close Browser
 
 *** Keywords ***
-
 Submit Login Homepage
     Wait Until Element Is Visible    //a[text()='Login']
     Click Element    //a[text()='Login']
@@ -34,7 +33,6 @@ Input Username And Password
     Wait Until Element Is Visible    //input[@id='password']
     Input Text    //input[contains(@id, 'input')]    ${USERNAME}
     Input Text    //input[@id='password']    ${PASSWORD}
-
 
 Input OTP
     Wait Until Element Is Visible    //div[@class='FormOtp_form__U62ob']
