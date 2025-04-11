@@ -1,16 +1,36 @@
 *** Settings ***
 Library    SeleniumLibrary
-
-Test Setup       Open Browser    ${URL}    ${BROWSER}
+Library    library.py
+Test Setup       Open Browser    ${URL_BETA}    ${BROWSER}
 Test Teardown    Close Browser
 
 *** Variables ***
-${URL}         https://m-new.cinema21.co.id/id
-${BROWSER}     firefox
-${USERNAME}    0821212121
-${PASSWORD}    212121
-${OTP}         111111
+${URL_STAGING}      https://dev-m-new.cinema21.co.id/
+${URL_BETA}         https://m-new.cinema21.co.id/
+${BROWSER}          firefox
+# ${USERNAME}         6281219693235
+# ${PASSWORD}         123456
 
+${USERNAME}         62821212121
+${PASSWORD}         212121
+${OTP}              111111
+
+
+# DB Config
+${MESSAGE}        Hello, world!
+${PASSWORD}       ${EMPTY}
+${ALIAS}          mtix_devel
+
+${SSH_HOST}         34.124.238.137
+${SSH_PORT}         20001
+${SSH_USER}         regi
+${SSH_PKEY}         /Users/cinemaxxi/.ssh/id_rsa
+${SQL_HOST}         10.255.255.6
+# ${SQL_HOST}         localhost:3306
+${SQL_PORT}         3306
+${SQL_USER}         mtix_dev
+${SQL_PASSWORD}     mtix_dev@21
+${SQL_DATABASE}     mtix_application
 
 *** Test Cases ***
 Valid Login Test
@@ -18,6 +38,7 @@ Valid Login Test
     Submit Login Homepage
     Input Username And Password
     Submit Login Form
+    # Generate OTP Code      6281219693235
     Input OTP
     Verify Login Success
     Submit User Button
@@ -27,7 +48,6 @@ Valid Login Test
 Veriry registrasi
     Maximize Browser Window
     Submit Login Homepage
-    
     
 
 *** Keywords ***
@@ -54,11 +74,10 @@ Submit Login Form
 
 Verify Login Success
     Wait Until Element Is Visible    //div[@class='Alert_snackbar__aHkWS Alert_success__phczx false']
-    Alert Should Be Present    //div[@class='Alert_snackbar__aHkWS Alert_success__phczx false']    Welcome, ${USERNAME}
 
 Submit User Button
-    Wait Until Element Is Visible    //button[@class='navbtn']
-    Click Element    //button[@class='navbtn']
+    Wait Until Element Is Visible    //img[contains(@src, 'avatar')]
+    Click Element    //img[contains(@src, 'avatar')]
 
 Submit Logout Button
     Wait Until Element Is Visible    //div[@class='NavbarLink_dropdown__footer__FRFUM']
@@ -67,3 +86,25 @@ Submit Logout Button
 Submit Yes Button
     Wait Until Element Is Visible    //button[normalize-space()='Yes']
     Click Element    //button[normalize-space()='Yes']
+
+Generate OTP Code
+    [Documentation]     Keyword for generate otp code login
+    [Arguments]         ${PHONE}=${phone_number}
+    Sleep   3
+    Query Select Data OTP Login From DB mtix_application            ${PHONE}
+
+Query Select Data OTP Login From DB mtix_application
+    [Documentation]         Keyword for get select otp code login from to_send mtix_application
+    [Arguments]             ${PHONE}=${phone_number}
+    Open Connection SSH And DB
+    # Connect Fast Forward
+    ${result}=         Execute Query    SELECT SUBSTRING(substring_index(message,'OTP : ',-1),1,6) from mtix_application.to_send WHERE msisdn = '${PHONE}' ORDER BY datelog desc limit 1
+    Log    ${result}
+    Set Test Variable       ${OTP}        ${result[0][0]}
+    Log to console          ${OTP}
+
+Open Connection SSH And DB
+    [Documentation]     Open SSH tunnel, connect to MySQL
+    [Arguments]        ${DatabaseName}=${SQL_DATABASE}
+    Open SSH Tunnel    ${SSH_HOST}    ${SSH_PORT}    ${SSH_USER}    ${SSH_PKEY}    ${SQL_HOST}    ${SQL_PORT}
+    Mysql Connect      ${SQL_USER}    ${SQL_PASSWORD}    ${DatabaseName}

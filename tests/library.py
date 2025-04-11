@@ -1,5 +1,6 @@
 from sshtunnel import SSHTunnelForwarder
 import pymysql
+import mysql.connector
 
 class library:
     def __init__(self):
@@ -58,3 +59,25 @@ class library:
             self.tunnel.stop()
             print("SSH Tunnel Closed")
 
+
+    def connect_fast_forward(self):
+        host = '127.0.0.1'
+        port = 3306
+        user = "mtix_dev"
+        password = "mtix_dev@21"
+        database = "mtix_application"
+
+        try:
+            connection = mysql.connector.connect(
+                host=host,
+                port=port,
+                user=user,
+                password=password,
+                database=database
+            )
+
+            if (connection.is_connected):
+                print("Connected")
+
+        except mysql.connector.Error as e:
+            print("Error", e)
