@@ -1,8 +1,8 @@
+results/
+tests/
+drivers/
 *.log
 *.txt
 *.png
 *.html
 *.xml
-results/
-tests/
-drivers/
