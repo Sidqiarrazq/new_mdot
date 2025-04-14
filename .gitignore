@@ -1,0 +1,8 @@
+results/
+tests/
+drivers/
+*.log
+*.txt
+*.png
+*.html
+*.xml
