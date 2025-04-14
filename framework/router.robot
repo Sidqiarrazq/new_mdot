@@ -1,5 +1,7 @@
 *** Settings ***
-Library    SeleniumLibrary
+Library            SeleniumLibrary
+Library            OperatingSystem
+# Library            String
 # Test Setup       Open Browser    ${URL_BETA}    ${BROWSER} 
 # Test Teardown    Close Browser
 

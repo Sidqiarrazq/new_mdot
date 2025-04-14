@@ -1,8 +1,12 @@
 *** Settings ***
 Resource                        ../framework/router.robot
 # Test Timeout                    ${DEFAULT_TEST_TIMEOUT}
-Test Setup                      base.Start Testing        ${BROWSER}
+Test Setup                      base.Start Testing        ${URL_BETA}
 Test Teardown                   base.End Testing
+
+*** Variables ***
+${URL_BETA}            
+${BROWSER}
 
 *** Test Cases ***
 Valid Login Test
