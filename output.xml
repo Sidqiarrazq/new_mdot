@@ -1,121 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-04-11T15:30:36.579032" rpa="false" schemaversion="5">
-<suite id="s1" name="Sample Test" source="c:\Users\Sidqi\Testing\tests\sample_test.robot">
-<test id="s1-t1" name="Valid Login Test" line="15">
-<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2025-04-11T15:30:37.205077" level="INFO">Opening browser 'chrome' to base url 'https://m-new.cinema21.co.id/id'.</msg>
-<arg>${URL}</arg>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-04-14T13:52:21.141190" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcase" source="c:\Users\Sidqi\testing_mdot\testcase\testcase.robot">
+<test id="s1-t1" name="Valid Login Test" line="8">
+<kw name="Start Testing" owner="base" type="SETUP">
+<kw name="Open Mdot" owner="base">
+<msg time="2025-04-14T13:52:21.718597" level="FAIL">Keyword with same name defined multiple times.</msg>
 <arg>${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-04-11T15:30:37.204390" elapsed="4.985950"/>
+<status status="FAIL" start="2025-04-14T13:52:21.717932" elapsed="0.004375">Keyword with same name defined multiple times.</status>
 </kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-04-11T15:30:42.193759" elapsed="0.163351"/>
+<arg>${BROWSER}</arg>
+<status status="FAIL" start="2025-04-14T13:52:21.717038" elapsed="0.005902">Keyword with same name defined multiple times.</status>
 </kw>
-<kw name="Submit Login Homepage">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>//a[text()='Login']</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-04-11T15:30:42.360866" elapsed="3.066048"/>
+<kw name="End Testing" owner="base" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-04-14T13:52:21.726616" elapsed="0.000731"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-04-11T15:30:45.428143" level="INFO">Clicking element '//a[text()='Login']'.</msg>
-<arg>//a[text()='Login']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-11T15:30:45.427573" elapsed="0.364482"/>
+<status status="PASS" start="2025-04-14T13:52:21.724652" elapsed="0.003122"/>
 </kw>
-<status status="PASS" start="2025-04-11T15:30:42.359103" elapsed="3.433452"/>
-</kw>
-<kw name="Input Username And Password">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>//input[contains(@id, 'input')]</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-04-11T15:30:45.795217" elapsed="2.047452"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>//input[@id='password']</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-04-11T15:30:47.843958" elapsed="0.106579"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-04-11T15:30:47.954226" level="INFO">Typing text '0821212121' into text field '//input[contains(@id, 'input')]'.</msg>
-<arg>//input[contains(@id, 'input')]</arg>
-<arg>${USERNAME}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-11T15:30:47.952547" elapsed="0.374898"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-04-11T15:30:48.330036" level="INFO">Typing text '212121' into text field '//input[@id='password']'.</msg>
-<arg>//input[@id='password']</arg>
-<arg>${PASSWORD}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-11T15:30:48.328478" elapsed="0.384293"/>
-</kw>
-<status status="PASS" start="2025-04-11T15:30:45.793982" elapsed="2.919580"/>
-</kw>
-<kw name="Submit Login Form">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>//button[text()='Login']</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-04-11T15:30:48.718330" elapsed="0.092985"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-04-11T15:30:48.813114" level="INFO">Clicking element '//button[text()='Login']'.</msg>
-<arg>//button[text()='Login']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-11T15:30:48.812236" elapsed="0.324702"/>
-</kw>
-<status status="PASS" start="2025-04-11T15:30:48.716155" elapsed="0.422100"/>
-</kw>
-<kw name="Input OTP">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2025-04-11T15:30:54.491360" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-04-11T15:30:54.492087" level="FAIL">Element '//div[@class='FormOtp_form__U62ob']' not visible after 5 seconds.</msg>
-<arg>//div[@class='FormOtp_form__U62ob']</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2025-04-11T15:30:49.143893" elapsed="5.359019">Element '//div[@class='FormOtp_form__U62ob']' not visible after 5 seconds.</status>
-</kw>
-<kw name="Get Length" owner="BuiltIn">
-<var>${length}</var>
-<arg>${OTP}</arg>
-<doc>Returns and logs the length of the given item as an integer.</doc>
-<status status="NOT RUN" start="2025-04-11T15:30:54.503880" elapsed="0.000389"/>
-</kw>
-<for flavor="IN RANGE">
-<iter>
-<kw name="Input Text" owner="SeleniumLibrary">
-<arg>//input[${index + 1}]</arg>
-<arg>${OTP[${index}]}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-04-11T15:30:54.506430" elapsed="0.000508"/>
-</kw>
-<var name="${index}"/>
-<status status="NOT RUN" start="2025-04-11T15:30:54.505661" elapsed="0.001789"/>
-</iter>
-<var>${index}</var>
-<value>0</value>
-<value>${length}</value>
-<status status="NOT RUN" start="2025-04-11T15:30:54.504914" elapsed="0.003066"/>
-</for>
-<status status="FAIL" start="2025-04-11T15:30:49.141413" elapsed="5.367471">Element '//div[@class='FormOtp_form__U62ob']' not visible after 5 seconds.</status>
-</kw>
-<kw name="Submit User Button">
-<status status="NOT RUN" start="2025-04-11T15:30:54.510469" elapsed="0.000597"/>
-</kw>
-<kw name="Submit Logout Button">
-<status status="NOT RUN" start="2025-04-11T15:30:54.512284" elapsed="0.000336"/>
-</kw>
-<kw name="Submit Yes Button">
-<status status="NOT RUN" start="2025-04-11T15:30:54.514107" elapsed="0.000510"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-04-11T15:30:54.516786" elapsed="2.648716"/>
-</kw>
-<status status="FAIL" start="2025-04-11T15:30:37.202585" elapsed="19.965249">Element '//div[@class='FormOtp_form__U62ob']' not visible after 5 seconds.</status>
+<status status="FAIL" start="2025-04-14T13:52:21.715255" elapsed="0.013306">Setup failed:
+Keyword with same name defined multiple times.</status>
 </test>
-<status status="FAIL" start="2025-04-11T15:30:36.586669" elapsed="20.590248"/>
+<status status="FAIL" start="2025-04-14T13:52:21.152929" elapsed="0.578462"/>
 </suite>
 <statistics>
 <total>
@@ -124,9 +30,10 @@
 <tag>
 </tag>
 <suite>
-<stat name="Sample Test" id="s1" pass="0" fail="1" skip="0">Sample Test</stat>
+<stat name="Testcase" id="s1" pass="0" fail="1" skip="0">Testcase</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2025-04-14T13:52:21.699428" level="ERROR">Error in file 'c:\Users\Sidqi\testing_mdot\framework\base.robot' on line 19: Creating keyword 'Open Mdot' failed: Keyword with same name defined multiple times.</msg>
 </errors>
 </robot>
