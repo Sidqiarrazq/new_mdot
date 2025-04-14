@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-04-14T14:59:39.651299" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-04-14T15:18:55.858879" rpa="false" schemaversion="5">
 <suite id="s1" name="Testcase" source="c:\Users\Sidqi\testing_mdot\testcase\testcase.robot">
 <test id="s1-t1" name="Valid Login Test" line="8">
 <kw name="Start Testing" owner="base" type="SETUP">
 <kw name="Open Mdot" owner="base">
-<msg time="2025-04-14T14:59:41.789071" level="FAIL">Keyword with same name defined multiple times.</msg>
+<msg time="2025-04-14T15:18:56.535012" level="FAIL">Keyword with same name defined multiple times.</msg>
 <arg>${BROWSER}</arg>
-<status status="FAIL" start="2025-04-14T14:59:41.788164" elapsed="0.005961">Keyword with same name defined multiple times.</status>
+<status status="FAIL" start="2025-04-14T15:18:56.534077" elapsed="0.004048">Keyword with same name defined multiple times.</status>
 </kw>
 <arg>${BROWSER}</arg>
-<status status="FAIL" start="2025-04-14T14:59:41.786520" elapsed="0.008754">Keyword with same name defined multiple times.</status>
+<status status="FAIL" start="2025-04-14T15:18:56.532999" elapsed="0.005755">Keyword with same name defined multiple times.</status>
 </kw>
 <kw name="End Testing" owner="base" type="TEARDOWN">
 <kw name="Close All Browsers" owner="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2025-04-14T14:59:41.798891" elapsed="0.000615"/>
+<status status="PASS" start="2025-04-14T15:18:56.541464" elapsed="0.000431"/>
 </kw>
-<status status="PASS" start="2025-04-14T14:59:41.797144" elapsed="0.002818"/>
+<status status="PASS" start="2025-04-14T15:18:56.540037" elapsed="0.002179"/>
 </kw>
-<status status="FAIL" start="2025-04-14T14:59:41.784098" elapsed="0.016649">Setup failed:
+<status status="FAIL" start="2025-04-14T15:18:56.530863" elapsed="0.012101">Setup failed:
 Keyword with same name defined multiple times.</status>
 </test>
-<status status="FAIL" start="2025-04-14T14:59:39.670742" elapsed="2.139620"/>
+<status status="FAIL" start="2025-04-14T15:18:55.872616" elapsed="0.673398"/>
 </suite>
 <statistics>
 <total>
@@ -34,6 +34,6 @@ Keyword with same name defined multiple times.</status>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-04-14T14:59:41.752640" level="ERROR">Error in file 'c:\Users\Sidqi\testing_mdot\framework\base.robot' on line 19: Creating keyword 'Open Mdot' failed: Keyword with same name defined multiple times.</msg>
+<msg time="2025-04-14T15:18:56.513541" level="ERROR">Error in file 'c:\Users\Sidqi\testing_mdot\framework\base.robot' on line 19: Creating keyword 'Open Mdot' failed: Keyword with same name defined multiple times.</msg>
 </errors>
 </robot>
