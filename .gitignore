@@ -1,5 +1,6 @@
 results/
 tests/
+drivers/
 *.log
 *.txt
 *.png
