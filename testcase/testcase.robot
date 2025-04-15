@@ -1,16 +1,11 @@
 *** Settings ***
 Resource                        ../framework/router.robot
 # Test Timeout                    ${DEFAULT_TEST_TIMEOUT}
-Test Setup                      base.Start Testing        ${URL_BETA}
+Test Setup                      base.Start Testing    ${URL_BETA}
 Test Teardown                   base.End Testing
-
-*** Variables ***
-${URL_BETA}            
-${BROWSER}
 
 *** Test Cases ***
 Valid Login Test
-    Maximize Browser Window
     Submit Login Homepage
     Input Username And Password
     Submit Login Form

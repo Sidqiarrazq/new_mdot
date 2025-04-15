@@ -1,9 +1,7 @@
 *** Settings ***
 Library            SeleniumLibrary
 Library            OperatingSystem
-# Library            String
-# Test Setup       Open Browser    ${URL_BETA}    ${BROWSER} 
-# Test Teardown    Close Browser
+Library            String
 
 ## Setting Config
 Resource            config.robot

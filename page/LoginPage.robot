@@ -14,6 +14,5 @@ Input Username And Password
     Input Text    ${input_password}    ${PASSWORD}
 
 Submit Login Form
-    Submit Login Form
     Wait Until Element Is Visible    ${submit_login_form}
     Click Element    ${submit_login_form}
