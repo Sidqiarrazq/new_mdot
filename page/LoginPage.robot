@@ -2,9 +2,9 @@
 Resource            ../framework/router.robot
 
 *** Variables ***
-${input_username}    //input[contains(@id, 'input')]
-${input_password}    //input[@id='password']
-${submit_login_form}    //button[text()='Login']
+${input_username}        //input[contains(@id, 'input')]
+${input_password}        //input[@id='password']
+${submit_login_form}     //button[text()='Login']
 
 *** Keywords ***
 Input Username And Password

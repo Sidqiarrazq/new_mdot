@@ -8,11 +8,11 @@ Start Testing
     Set Selenium Timeout        ${DEFAULT_TIMEOUT}
     Set Selenium Speed	        ${DELAY}
 
-End Testing
-    Close All Browsers
-
 Open Mdot
     [Arguments]     ${URL_BETA}
-    Open Browser                ${URL_BETA}      chrome
+    Open Browser                ${URL_BETA}      ${BROWSER}
     Maximize Browser Window
     Go To                       ${URL_BETA}
+
+End Testing
+    Close All Browsers

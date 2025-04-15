@@ -2,10 +2,10 @@
 Resource            ../framework/router.robot
 
 *** Variables ***
-${submit_login_homepage}      //a[text()='Login']
-${submit_user_button}      //img[contains(@src, 'avatar')]
+${submit_login_homepage}     //a[text()='Login']
+${submit_user_button}        //img[contains(@src, 'avatar')]
 ${submit_logout_button}      //div[@class='NavbarLink_dropdown__footer__FRFUM']
-${submit_yes_button}      //button[normalize-space()='Yes']
+${submit_yes_button}         //button[normalize-space()='Yes']
 
 *** Keywords ***
 Submit Login Homepage
