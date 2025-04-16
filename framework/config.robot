@@ -1,5 +1,5 @@
 *** Variables ***
 ${BROWSER}                  chrome
-${URL_BETA}                 https://m-new.cinema21.co.id/id
+${URL_BETA}                 https://m.21cineplex.com/id
 ${DELAY}                    0.2
 ${DEFAULT_TIMEOUT}          20
